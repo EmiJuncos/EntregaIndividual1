@@ -1,248 +1,269 @@
-            * {
-            margin: 0px;
-        }
-        
-        header div {
-            background-color: #EAC926
-        }
-        
-        header div p {
-            display: block;
-        }
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            box-sizing: border-box;
-            margin: 0px;
-            border: 0px;
-            padding: 0px;
-        }
-        
-        .headersup {
-            display: flex;
-            flex-direction: row;
-            padding: 10px 10px 20px;
-            padding-top: 15px;
-        }
-        
-        .headersup .logo {
-            width: 50%;
-            max-width: 200px;
-        }
-        
-        .busquedalupa {
-            width: 40%;
-            position: relative;
-            padding-top: 6px;
-        }
-        
-        .busquedalupa i {
-            position: absolute;
-            right: -26px;
-            top: 16px
-        }
-        
-        .subtitu {
-            text-align: center;
-        }
-        
-        #prod {
-            border-radius: 5px;
-            width: 100%;
-            height: 50%;
-            padding: 8%;
-            padding-top: 6%;
-            padding-bottom: 7%;
-            margin-left: 6px;
-            border-width: 0px;
-        }
-        
-        #menu {
-            width: 40px;
-            background-color: #0044AA;
-            color: white;
-            font-size: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            margin-left: 40%;
-            text-align: center;
-            vertical-align: center;
-            border-radius: 5px;
-            padding: 7px;
-            cursor: pointer;
-            line-height: 40px;
-        }
-        
-        #menu:hover {
-            background-color: #0022AA;
-        }
-        
-        section .banner {
-            width: 100%;
-            display: block;
-        }
-        
-        .principal {
-            background-color: #ebebeb;
-        }
-        
-        main article {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding: 15px;
-        }
-        
-        .navegacion {
-            display: none;
-        }
-        
-        ul {
-            list-style-type: none;
-        }
-        
-        ol {
-            list-style-type: none;
-            text-align: left;
-            margin-left: 0;
-            padding: 0;
-        }
-        
-        p {
-            font-size: 12px;
-        }
-        
-        .titulares {
-            font-size: 24px;
-            background-color: #ebebeb;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 100%;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        main section {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        
-        main section article {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            background-color: white;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        
-        main section article ol {
-            font-family: 'Roboto', sans-serif;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            border-top-style: solid;
-            border-top-color: #ebebeb;
-            border-top-width: 1px;
-            position: relative;
-            padding-top: 10%;
-            padding-bottom: 3%;
-            line-height: 35px;
-        }
-        
-        main section article ol i {
-            width: 100%;
-            position: absolute;
-            left: 250px;
-            bottom: 99px;
-            transition: transform 2s;
-            ;
-        }
-        
-        main section article ol li {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            position: relative;
-        }
-        
-        main section article ol li .precios {
-            width: 70%;
-        }
-        
-        main section article ol li .descuentos {
-            width: 70%;
-            position: absolute;
-            right: 50px
-        }
-        
-        main section article ol li span {
-            display: none;
-        }
-        
-        main .imagenes {
-            width: 100%;
-        }
+    * {
+        margin: 0px;
     }
+    
+    header div {
+        background-color: #EAC926;
+    }
+    
+    .contenedorGeneral {
+        margin: 0 auto;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0px;
+        color: #666;
+        background-color: #ebebeb;
+        padding: 0px;
+    }
+    
+    .contPrincipal {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 20px;
+    }
+    
+    .headersup {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .headersup .logo {
+        width: 50%;
+        max-width: 200px;
+    }
+    
+    .busquedalupa {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 10px;
+        position: relative;
+    }
+    
+    .busquedalupa i {
+        right: 8px;
+        top: 8px;
+        padding: 0 5px;
+        width: 15px;
+        position: absolute;
+        background-color: white;
+        color: #666;
+        font-size: 0.8em;
+    }
+    
+    .busquedalupa form {
+        margin: 0;
+        width: 100%;
+    }
+    
+    p .subtitu {
+        text-align: center;
+        font-size: 0.8em;
+        margin: 5px;
+        width: 100%;
+        color: black;
+    }
+    
+    #prod {
+        margin: 0;
+        width: 100%;
+        padding: 5px 0 5px 5px;
+        border: none;
+    }
+    
+    #menu {
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        background-color: #0044AA;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px auto 0;
+    }
+    
+    #menu:hover {
+        background-color: #0022AA;
+        cursor: pointer;
+    }
+    
+    .banner {
+        width: 100%;
+        display: block;
+    }
+    
+    .principal {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .navegacion {
+        display: none;
+    }
+    
+    ul {
+        padding-left: 0px;
+    }
+    
+    p {
+        font-size: 12px;
+        color: black;
+    }
+    
+    .titulares {
+        font-size: 24px;
+        background-color: #ebebeb;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    section .contPrincipal {
+        width: 100%;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section article {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 15px;
+        width: 100%;
+        background-color: white;
+        border-radius: 2%;
+    }
+    
+    section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    article:hover .descripSpan {
+        display: block;
+    }
+    
+    .fa-truck {
+        position: absolute;
+        top: -15px;
+        align-self: flex-end;
+        transition: transform 2s;
+    }
+    
+    article:hover .fa-truck {
+        transform: rotate(-90deg);
+    }
+    
+    #camion {
+        color: #39b54a;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        border: #39b54a 1px solid;
+        text-align: center;
+        line-height: 30px;
+        background-color: white;
+    }
+    
+    main section article .tarjetaArt {
+        border-top: solid 1px #ebebeb;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .contpreciodesc {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 15px;
+    }
+    
     .precios {
         font-size: 18px;
+        font-weight: 500;
+        width: 30%;
+        margin: 0;
     }
+    
     .descuentos {
+        width: 70%;
+        margin: 0;
+        padding-left: 5px;
         font-size: 16px;
-        color: #1259c3;
+        color: #39b54a;
     }
+    
+    .descripSpan {
+        display: none;
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
     .descripciones {
         font-size: 16px;
     }
-    #camion {
-        color: #39b54a;
+    
+    .fa-credit-card {
+        color: #1259c3;
     }
+    
+    .fa-gift {
+        color: #1259c3;
+    }
+    
+    .fa-user-shield {
+        color: #1259c3;
+    }
+    
     footer {
         padding-left: 5%;
         padding-right: 5%;
+        text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
+        background-color: white;
     }
-    footer article {
+    
+    .contFooter {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contFooter article {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    #nombredeusuario {
-        width: 100%;
-        padding: 10px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border-width: 0px;
-    }
-    #nacimiento {
-        width: 100%;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border-width: 0px;
-    }
-    #contraseña {
-        padding: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        border-width: 0px;
-        width: 100%;
-    }
+    
     .formulario {
-        display: block;
-        flex-direction: column;
-        width: 90%;
-        text-align: center;
-        align-items: center;
-        margin-left: 2%;
-        margin-right: 1%;
+        max-width: 400px;
+        margin: 20px auto;
     }
+    
+    .formulario input {
+        width: 95%;
+        padding: 10px;
+        margin: 17px auto;
+        border-radius: 5px;
+        border: 0px;
+    }
+    
     main button {
         background-color: #0044AA;
         display: block;
@@ -254,63 +275,108 @@
         color: white;
         margin-right: 0;
     }
+    
     #boton:hover {
         background-color: #0022AA;
     }
+    
     .subtit {
         justify-content: start;
         font-size: 14px;
         text-align: left;
         padding-left: 2%;
     }
+    
     h4 {
         margin-bottom: 10px;
     }
+    
     .radiobutton {
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: center;
     }
+    
     #botonreset {
         background-color: #0044AA;
     }
+    
     #botonreset:hover {
         background-color: #CC1155
     }
+    
     .checkbox {
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
-    .checkbox label {
-        width: 100%;
-        line-height: 35px;
         justify-content: center;
     }
-    body footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    
+    .checkbox label {
+        width: 90%;
+        margin: 20px 0;
     }
-    body footer article {
-        width: 100%;
-        justify-content: space-between;
+    
+    .checkbox input {
+        width: 5%;
+        margin: 20px 18px 20px 0;
     }
-    body footer article div {
-        width: 100%;
-        justify-content: space-between;
-    }
+    
     @media(min-width:361px) {
         main section article {
-            width: 30%;
-            margin-left: 2%;
-            margin-right: 2%;
+            width: 40%;
         }
-        
-        @media(min-width:769px) {
-            main section article {
-                width: 20%;
-                margin-left: 2%;
-                margin-right: 2%;
-            }
+        .descuentos {
+            padding-left: 30px;
+            font-size: 13px;
+        }
+        .precios {
+            font-size: 16px;
+        }
+    }
+    
+    @media(min-width:769px) {
+        main section article {
+            display: inline-block;
+            width: 20%;
+        }
+        .navegacion {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navegacion ul {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 25px;
+            font-size: 12px;
+            color: black;
+        }
+        .navegacion .ofer li {
+            margin-right: 15px;
+            color: black;
+        }
+        .navegacion .crea li {
+            margin-left: 15px;
+            color: black;
+        }
+        #menu {
+            display: none;
+        }
+        .precios {
+            font-size: 18px;
+        }
+        .descuentos {
+            font-size: 16px;
+            padding-left: 15px;
+        }
+        .contFooter {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .contFooter article {
+            width: 30%;
+        }
+    }
